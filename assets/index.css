@@ -67,10 +67,9 @@ main div {
     background-color: #111d3b;
     background-clip: border-box;
     border: 1px solid #4e2ce6;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 15px 15px;
     padding: 10px;
-    margin: 20px;
-    margin-top: 0;
+    margin: 0;
   }
 .psp-image {
     flex-grow: 3;
