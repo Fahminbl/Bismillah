@@ -2,90 +2,231 @@
     #content, aside {
         width: 100%;
         padding: 0;
-    }*/
-body {
-    margin : 0;
-    padding : 0; 
-    font-family: Muli, Futura, Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    color: azure;
-    background-color: #4e2ce6;
-}
-header {
-    box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin : 0;
+        padding : 0; 
+        font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        color: azure;
+        background-color: #4e2ce6;
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     border-radius: 5px;
     display: inline;
-}
-.jumbotron {
-    background-color: #111d3b;
-    /*background-color: #111d3b;*/
-    padding: 50px;
-    top: 0;
-    color: azure;
-    font-family: Muli, Futura, Helvetica, Arial, sans-serif;
-}
-h2 ~ p {
-    align: center;
-}
-.navigasi {
-    display: inline;
-}
-nav li {
-    display : inline;
-    list-style-type : none;
-    margin-right : 20px;
-    text-align: right;
     }
-nav a {
-    font-size: medium;
-    font-weight: 400;
-    text-decoration: none;
-    color: azure;
-}
-nav {
-    background-color : #171a21;
-    padding : 5px;
-    position : sticky;
-    top : 0;
+    /*.jumbotron {
+        text-align: center;
+        object-position: ;
+        background-color: #111d3b;
+    }
+    nav li {
+        display : inline;
+        list-style-type : none;
+        margin-right : 20px;
+        }
+    nav a {
+        font-size: medium;
+        font-weight: 400;
+        text-decoration: none;
+        color: azure;
+    }
+    nav {
+        background-color : #171a21;
+        width: 100%;
+        padding : 5px;
+        position: fixed;
+        object-position: top;
+        top : 0;
+        box-sizing: border-box;
+        border-radius: 0 0 4px 4px;
+        box-shadow : 0 4px 15px 0 rgb(0, 0, 0, 0.2);
+    }
+    .navigasi {
+        display: inline;
+    }
+    nav li {
+        display : inline;
+        list-style-type : none;
+        margin-right : 20px;
+        text-align: right;
+        }
+    nav a {
+        font-size: medium;
+        font-weight: 400;
+        text-decoration: none;
+        color: azure;
+    }
+    nav {
+        background-color : #171a21;
+        padding : 5px;
+        position : sticky;
+        top : 0;
+        box-sizing: border-box;
+        border-radius: 0 0 4px 4px;
+        box-shadow : 0 4px 15px 0 rgb(0, 0, 0, 0.2);
+    
+    }
+    .psp {
+        background-color : #111d3b;
+        width: 100%;
+        padding : 5px;
+        top : 0;
+        box-sizing: border-box;
+        border-radius: 0 0 4px 4px;
+        box-shadow : 0 4px 15px 0 rgb(0, 0, 0, 0.2);
+    }
+    #fighting img,
+    #rpg img,
+    #sports img {
+        height: 300px;
+    }
+    .street-img {
+        height: 200px;
+    }
+    #fighting,
+    #sports,
+    #rpg {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding : 20px;
+        position: relative;
+        top: 20px;
+        box-sizing: border-box;
+        border-radius: 0 0 4px 4px;
+        box-shadow : 0 4px 15px 0 rgb(0, 0, 0, 0.2);
+        justify-items: baseline;
+    }
+    .flex-naruto p {
+        flex-direction: row;
+    }
+    aside img {
+        border-radius: 50%;
+        height: 200px;
+    }
+    div h2 {
+        position: relative;
+        left: 40px;
+    }
+    #111d3b
+    */
+    /*
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');.profile{font-family:'Quicksand',sans-serif;text-align:center}
+    .profile img{
+        width:200px
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    nav a:hover{
+        font-weight:bold
+    }
+    body{
+        font-family: Muli, Futura, Helvetica, Arial, sans-serif;margin:0;padding:0
+    }
+    main{
+        padding:20px;overflow:auto
+    }
+    h2,h3{
+        color:#00a2c6;font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+    }
+    footer{
+        padding:20px;color:white;background-color:#00a2c6;text-align:center;font-weight:bold
+    }
+    #content{
+        box-shadow:0 4px 15px 0 rgba(0,0,0,0.2);border-radius:0 0 4px 4px;padding:20px;margin-top:20px
+    }
+    .jumbotron{
+        padding:60px;background-color:#00c8eb;text-align:center;font-size:20px;color:white
+    }
+    nav li{
+        display:inline;list-style-type:none;margin-right:20px
+    }
+    nav{
+        background-color:#00a2c6;padding:5px;position:sticky;top:0
+    }
+    nav a{
+        font-size:18px;font-weight:400;text-decoration:none;color:white
+    }
+    #content{
+        float:left;width:75%
+    }
+    aside{
+        float:right;width:25%;padding-left:20px
+    }
+    *{
+        box-sizing:border-box
+    }
+    @media screen and (max-width: 1000px){
+        #content,
+        aside{width:100%;padding:0}}header{display:inline}*/
+
+
+*{
     box-sizing: border-box;
-    border-radius: 0 0 4px 4px;
-    box-shadow : 0 4px 15px 0 rgb(0, 0, 0, 0.2);
+    background-color: #4e2ce6;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    padding:20px;overflow:auto
+}
+
+.container{
 
 }
-.flex-psp {
-    display: flex;
+.img {
+    width: 100%;
+    float: left;
+    max-height: 300px;
 }
-main div {
-    flex-direction: row;
-    flex-basis: 25%;
+aside img {
+    border-radius: 50%;
+    height: 200px;
 }
-.flex-psp {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    min-width: 0;
-    word-wrap: break-word;
+#fighting {
+    display: floa;
+}
+.card {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
     background-color: #111d3b;
-    background-clip: border-box;
-    border: 1px solid #4e2ce6;
-    border-radius: 0 0 15px 15px;
+    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+}
+.card p {
+    background-color: #111d3b;
     padding: 10px;
-    margin: 0;
-  }
-.psp-image {
-    margin-bottom: 0;
-    margin: 5px;
-    border: 2px #4e2ce6;
+    color: azure;
+}
+p img {
+    height: 300px;
+    float: left;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 10px;
+    position: relative;
+    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
+    bottom: 20px;
+}
+.psp-img {
+    height: 100px;
+}
+#content h1 {
+    padding: 10px;
     border-radius: 10px;
-    text-align: center;
-    object-position: bottom;
-}
-.psp-desc {
-    flex-grow: 2;
-    flex-basis: 75%;
-    border-radius: 5px;
-}
-.flex-psp section {
-    text-align: justify;
-    margin: 4px;
 }
