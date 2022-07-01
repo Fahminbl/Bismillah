@@ -187,7 +187,8 @@ nav li{
     display:inline;list-style-type:none;margin-right:20px;background-color: solid;border-radius: 20px;
 }
 nav{
-    background-color: solid;padding:5px;position:fixed;top:0;left: 0;right: 0;text-align: center;box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+background-color: solid;padding:5px;position:fixed;top:0;left: 0;right: 0;text-align: center;box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
 }
 nav a{
     font-size:18px;font-weight:400;text-decoration:none;color:white;border-radius: 10px;
