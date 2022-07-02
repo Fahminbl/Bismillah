@@ -188,7 +188,7 @@ nav li{
 }
 nav{
     z-index: 1;
-background-color: solid;padding:5px;position:fixed;top:0;left: 0;right: 0;text-align: center;box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
+    background-color: solid;padding:5px;position:fixed;top:0;left: 0;right: 0;text-align: center;box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
 }
 nav a{
     font-size:18px;font-weight:400;text-decoration:none;color:white;border-radius: 10px;
@@ -222,9 +222,14 @@ main{
     max-height: 300px;
     background-color: #4e2ce6;
 }
-aside img {
+#saya {
     border-radius: 50%;
-    height: 200px;
+    max-height: 150px;
+    box-shadow: 20px;
+    padding: 2px;
+    margin: 5px;
+    position: relative;
+    bottom: 5px;
 }
 #fighting {
     display: floa;
@@ -260,4 +265,24 @@ p img {
 #content h1 {
     padding: 10px;
     border-radius: 10px;
+}
+aside {
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    background-color: #111d3b;
+    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.profile {
+    width: auto;
+    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+}
+aside header,section {
+    border-radius: 20px 20px 20px 20px;
+}
+footer {
+    padding:20px;color:white;background-color:#111d3b;text-align:center;font-weight:bold;position: relative;top 10px
 }
