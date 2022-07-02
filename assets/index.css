@@ -179,19 +179,39 @@
     margin-right: 0;
     color: azure;
     background-color: #4e2ce6;
+    font-family: "rubik", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
-nav li{
-    display:inline;list-style-type:none;margin-right:20px;background-color: solid;border-radius: 20px;
+/*nav li{
+    display:inline;list-style-type:none;background-color: solid;margin: 0;
+}*/
+.navAtas{
+    list-style-type:none;
+    background-color: #111d3b;
+    z-index: 1;overflow: hidden;
+    background-color: solid;padding:7px;position:fixed;top:0;left: 0;right: 0;box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
 }
-nav{
-    z-index: 1;
-background-color: solid;padding:5px;position:fixed;top:0;left: 0;right: 0;text-align: center;box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);
+.navAtas a{
+    font-size:17px;font-weight:400;text-decoration:none;color:white;
+    padding: 14px 16px;margin: 0;text-align: center;float: left;text-decoration: none;
+    display:block;background: local;margin: 0;
 }
-nav a{
-    font-size:18px;font-weight:400;text-decoration:none;color:white;border-radius: 10px;
+.navAtas a.active {
+    background-color: #4e2ce6;
+    height: auto;
+    border-radius: 20px;
+}
+.navAtas a:hover{
+    background-color: darkorchid;
+    box-shadow: 0 4px 10px 0 rgba(0, 71, 249, 0.2);
+    text-shadow: 2px 2px #111d3b;
+    border-radius: 50px;
+}
+nav.icon {
+    display: none;
+    background: local;
 }
 .jumbotron{
     margin: 0 0 0 0;
@@ -200,8 +220,8 @@ nav a{
     background-repeat: repeat-x;
     text-align: center;
     width: 100%;
-    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.2);
-
+    position: relative;
+    top: 20px;
 }
 h2,h3 {
     color: azure;
@@ -222,12 +242,14 @@ main{
     max-height: 300px;
     background-color: #4e2ce6;
 }
-aside img {
+#saya {
     border-radius: 50%;
-    height: 200px;
-}
-#fighting {
-    display: floa;
+    max-height: 150px;
+    box-shadow: 20px;
+    padding: 2px;
+    margin: 5px;
+    position: relative;
+    bottom: 5px;
 }
 .card {
     overflow: auto;
@@ -235,7 +257,7 @@ aside img {
     height: 400px;
     padding: 15px;
     background-color: #111d3b;
-    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+    border-radius:20px;
     margin: revert;
 }
 .card p {
@@ -260,4 +282,63 @@ p img {
 #content h1 {
     padding: 10px;
     border-radius: 10px;
+}
+aside {
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    background-color: #111d3b;
+    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.profile {
+    width: auto;
+    box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+}
+aside header,section {
+    border-radius: 20px 20px 20px 20px;
+}
+footer {
+    padding:20px;color:white;background-color:#111d3b;text-align:center;font-weight:bold;position: relative;top 10px
+}
+@media screen and (max-width: 1000px) {
+    p img {
+        height: 150px;
+    }
+    p {
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navAtas a:not(:first-child){
+        display: none;
+    }
+    .navAtas a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navAtas.responsive {
+        position: fixed;
+    }
+    .navAtas.responsive.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #4e2ce6;
+    }
+    .navAtas.responsive a {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+    .navAtas.responsive.a:hover{
+        background-color: darkorchid;
+        box-shadow: 0 4px 10px 0 rgba(0, 71, 249, 0.2);
+        text-shadow: 2px 2px #111d3b;
+        border-radius: 50px;
+    }
 }
