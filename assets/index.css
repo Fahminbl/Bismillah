@@ -296,8 +296,12 @@ aside {
 .profile {
     width: auto;
     box-shadow:0 7px 15px 0 rgba(0,0,0,0.2);border-radius:20px;
+    border-radius: 20px 20px 20px 20px;
 }
-aside header,section {
+aside section {
+    border-radius: 20px 20px 20px 20px;
+}
+aside header {
     border-radius: 20px 20px 20px 20px;
 }
 footer {
@@ -350,7 +354,6 @@ footer {
   .navAtas a:hover {background-color: #ddd;}
   
   .show {display: block;}
-/*
 @media screen and (max-width: 1000px) {
     .card {
         height: 250px;
@@ -366,7 +369,7 @@ footer {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .navAtas a:not(:first-child){
         display: none;
     }
