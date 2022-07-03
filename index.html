@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <title>PSP GAME</title>
 </head>
 <body>
@@ -15,13 +18,15 @@
         </div>
         <nav class="navAtas" id="navAtasku">
                 <!--<li><img src="assets/image/icon.png" alt="" style="width: 3%;text-align: end;"></li>-->
-                <a class="active" href="#perkenalan">Sony PSP</a>
+                <button onclick="dropDown()" class="active">Main Menu</button>
+             <div id="Drop" class="dropdown-content">
+                <a href="#perkenalan">Sony PSP</a>
                 <a href="#fighting">Fighting</a>
                 <a href="#sports">Sports</a>
                 <a href="#rpg">RPG</a>
                 <a href="#profile">About Me</a>
-                <a href="javascript:void(0);" class="icon" onclick="duar()"><i class="fa fa-bars"></i>menu</a>
-        </nav>
+                </div>
+            </nav>
     </header>
     <main id="content">
     <div id="perkenalan" class="psp">
