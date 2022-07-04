@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style>
+        #vid1{
+            width: 0px;
+            height:0px;  
+           }
+           
+           #vid2{
+            width: 0px;
+            height:0px;    
+           }
+           
+           
+           #vid3{
+            width: 0px;
+            height: 0px;    
+           }
+           
+           
+           #vid4{
+            width: 0px;
+            height:0px;   
+           }
+           
+           .videos {
+               width: 480;
+               float: left;
+           }
+           
+           .thumbnails {
+               width: 260;
+               float: left;
+               
+           }</style>
+    </head>
+    <div class="thumbnails">
+    <div>
+        <a href="#" id="showvid1" ><img src="http://i.imgur.com/fFcq0.jpg" /></a>
+        <a href="#" id="showvid2" ><img src="http://i.imgur.com/r54R8.jpg" /></a> 
+    </div>
+    <div>
+        <a href="#" id="showvid3">
+            <img src="http://i.imgur.com/ZFzo3.jpg" id="showvid3"/> </a>
+        <a href="#" id="showvid4">
+            <img src="http://i.imgur.com/Hj7H9.jpg" id="showvid4" /></a>
+    </div>
+</div>
+
+<div class="videos">
+    
+<div id="vid1">
+    <iframe width="480" height="390" src="https://www.youtube.com/watch?v=NogQkXuuzdk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="vid2">        
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/oCFWVocrnDA" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="vid3">    
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/imS6H1JAkGY" frameborder="0" allowfullscreen></iframe>
+</div>      
+
+<div id="vid4">                
+    <iframe width="480" height="390" src="http://www.youtube.com/embed/ICsgjqVvtM0" frameborder="0" allowfullscreen></iframe>
+</div>    
+
+</div>
+<script>        $(document).ready(function () {
+    $('#vid1').hide();
+    $('#vid2').hide();
+    $('#vid3').hide();
+    $('#vid4').hide();
+
+    
+    $('a#showvid1').click(function () {
+        $('#vid1').toggle(400);
+    });
+    $('a#showvid2').click(function () {
+        $('#vid2').toggle(400);
+    });            
+    $('a#showvid3').click(function () {
+        $('#vid3').toggle(400);
+    });            
+    $('a#showvid4').click(function () {
+        $('#vid4').toggle(400);
+    });            
+    
+    
+});
+</script>
+</body>
+</html>
