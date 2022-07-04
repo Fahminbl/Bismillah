@@ -371,6 +371,9 @@ footer {
     p {
         font-size: 14px;
     }
+.slider-kontainer {
+max-width: 100%
+}
 }
 .slider-kontainer {
     max-width: 75%;
