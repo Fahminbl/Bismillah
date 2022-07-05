@@ -1,16 +1,6 @@
-//function duar() {
-//    var x = document.getElementById("navAtasku");
-//    if (x.className === "navAtas") {
-  //      x.className += " responsive";
-    //} else {x.className = "navAtas";
-//}
-
-
 function dropDown() {
     document.getElementById("Drop").classList.toggle("show");
   }
-  
-  // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.active')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -48,4 +38,12 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " aktif";
+}
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("balokKu").style.width = scrolled + "%";
 }
